@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.7;
+}
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(./921129-auto.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 30%;
+  clip-path: polygon(1% 0, 100% 11%, 100% 100%, 0% 100%);
+}
+.logo-carrier {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+.logo {
+  height: 80px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.head-nav {
+  text-transform: uppercase;
+  float: right;
+  text-decoration: none;
+  list-style: none;
+}
+.head-nav li {
+  display: inline-block;
+  margin-left: 50px;
+}
+.head-nav li a:link,
+.head-nav li a:visited {
+  padding: 5px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+.head-nav li a:hover,
+.head-nav li a:active {
+  border-bottom: 2px solid rgb(239, 243, 13);
+}
+.header-text {
+  width: 1140px;
+  margin-top: 150px;
+  margin-left: 250px;
+}
+.header-main {
+  text-transform: uppercase;
+  color: white;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  letter-spacing: 30px;
+  line-height: 20px;
+  animation-name: moveIntop;
+  animation-duration: 5s;
+  animation-delay: 3s;
+}
+.header-sub-main {
+  text-transform: uppercase;
+  color: white;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  animation-name: moveInbottom;
+  animation-duration: 5s;
+  animation-delay: 3s;
+}
+@keyframes moveIntop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  80% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes moveInbottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  80% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.carousel-inner {
+  background-color: brown;
+  clip-path: polygon(49% 15%, 100% 0, 100% 60%, 100% 100%, 0 99%, 0% 60%, 1% 0);
+}
+.carousel-head {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  margin-top: 15px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  animation-name: moveinright;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+@keyframes moveinright {
+  0% {
+    opacity: 0;
+    transform: rotateX(100deg);
+  }
+  80% {
+    transform: rotateX(-80deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0);
+  }
+}
