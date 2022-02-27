@@ -1,0 +1,76 @@
+.header {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-grey, 0.7),
+      rgba($color-grey, 0.7)
+    ),
+    url(./car.jfif);
+  background-size: cover;
+  background-position: center;
+  padding: 30%;
+  clip-path: polygon(29% 0, 100% 0, 99% 89%, 0 100%, 0 5%);
+  &__logo-carrier {
+    position: absolute;
+    top: 4.17rem;
+    left: 0.83rem;
+  }
+  &__logo {
+    height: 6.66rem;
+    margin-left: 2.5rem;
+    margin-bottom: 1.66rem;
+  }
+  &__head-nav {
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    float: right;
+  }
+  &__head-nav li {
+    display: inline;
+    margin-left: 4.17rem;
+    font-size: 20px;
+  }
+  &__head-nav li a:link,
+  &__head-nav li a:visited {
+    padding: 0.42rem 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-white;
+    font-size: 90%;
+    border-bottom: 0.17rem solid transparent;
+    transition: border-bottom 0.2s;
+  }
+  &__head-nav li a:hover,
+  &__head-nav li a:active {
+    border-bottom: 0.17rem solid $color-yellow;
+  }
+  &-text {
+    width: 95rem;
+    margin-top: 12.5rem;
+    margin-left: 20.8rem;
+  }
+  &--main {
+    text-transform: uppercase;
+    color: $color-white;
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    letter-spacing: 2.5rem;
+    line-height: 1.7rem;
+    animation-name: moveIntop;
+    animation-duration: 5s;
+    animation-delay: 3s;
+  }
+  &--sub-main {
+    text-transform: uppercase;
+    color: $color-white;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    animation-name: moveInbottom;
+    animation-duration: 5s;
+    animation-delay: 3s;
+  }
+}
