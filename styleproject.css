@@ -1,0 +1,49 @@
+body{
+    display:inline;
+    background-color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    color: blue;
+}
+
+.label__1:hover{
+    color: blueviolet;
+}
+.input__1{
+    color:white;
+    background-color:blue;
+}
+.submit__1{
+    background-color: blue;
+}
+.submit__1:hover{
+    background-color: white;
+}
+.label__3:hover{
+    color: blueviolet;
+}
+.input__3{
+    color: white;
+    background-color: blue;
+}
+.submit__3{
+    background-color: blue;
+}
+.submit__3:hover{
+    background-color: white;
+}
+.label__5:hover{
+    color: blueviolet;
+}
+.input__5{
+    color:white;
+    background-color:blue;
+}
+.submit__5{
+    background-color: blue;
+}
+.submit__5:hover{
+    background-color: white;
+}
+
