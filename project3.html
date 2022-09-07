@@ -1,242 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website project</title>
- <style>
- .entire-page{
-    background-color: aqua;
-  }
- .head-nav{
-    word-spacing: 50px;
-    padding-left: 500px;
-    padding-top: 30px;
- }
- .image1{
-    height: 65px;
-    width: 90px;
-    position:absolute;
-    padding-left: 300px;
-    padding-top:3px;
-    padding-bottom:3px;
- }
- .link1{
-    color:blue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration: none;
- }
- .link2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration: none;
-    word-spacing:2px;
- }
- .link3{
-    color:blue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration: none;
- }
- .link4{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration: none;
-    word-spacing:2px;
- }
- .img-1st{
-   height: 500px;
-   width: 1000px;
- }
- .image2{
-    height:200px;
-    width: 300px;
- }
- .image3{
-    height: 200px;
-    width: 300px;
- }
- .image4{
-    height: 200px;
-    width: 300px;
- }
- .text-img{
-   background-color: burlywood;
- }
- .heading-content1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color:blue;
-    padding-top: 20px;
-    text-decoration: underline;
- }
- .heading-content2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color:blue;
-    padding-top: 20px;
-    text-decoration: underline;
- }
-  th, td{
-   border: 3px solid blue;  
-   color: blue;
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   text-align: justify;
- }
- table{
-   padding-bottom:5px;
- }
- </style>
-</head>
-<body class="entire-page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>amigold real-estate</title>
+    <style>
+      .entire-page {
+        background-color: aqua;
+      }
+      .head-nav {
+        word-spacing: 50px;
+        padding-left: 500px;
+        padding-top: 30px;
+      }
+      .image1 {
+        height: 65px;
+        width: 90px;
+        position: absolute;
+        padding-left: 300px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+      }
+      .link1 {
+        color: blue;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        text-decoration: none;
+      }
+      .link2 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        text-decoration: none;
+        word-spacing: 2px;
+      }
+      .link3 {
+        color: blue;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        text-decoration: none;
+      }
+      .link4 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        text-decoration: none;
+        word-spacing: 2px;
+      }
+      .img-1st {
+        height: 500px;
+        width: 1000px;
+      }
+      .image2 {
+        height: 200px;
+        width: 300px;
+      }
+      .image3 {
+        height: 200px;
+        width: 300px;
+      }
+      .image4 {
+        height: 200px;
+        width: 300px;
+      }
+      .text-img {
+        background-color: burlywood;
+      }
+      .heading-content1 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: blue;
+        padding-top: 20px;
+        text-decoration: underline;
+      }
+      .heading-content2 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: blue;
+        padding-top: 20px;
+        text-decoration: underline;
+      }
+      th,
+      td {
+        border: 3px solid blue;
+        color: blue;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        text-align: justify;
+      }
+      table {
+        padding-bottom: 5px;
+      }
+      .input_opinion{
+       height:150px;
+       width: 800px;
+       background-color: burlywood;
+       color: blue;
+      }
+      .button_opinion{
+       background-color: blue;
+       color: aqua;
+      border-radius:8px;
+      height:40px;
+      width: 180px;
+      }
+    </style>
+  </head>
+  <body class="entire-page" onload="HandleLoad(this)">
     <div>
-        <img src="/precondo-ca-QHDFm084RNk-unsplash.jpg" class="image1">
+      <img src="/precondo-ca-QHDFm084RNk-unsplash.jpg" class="image1" />
     </div>
-   <div>
-     <nav class="head-nav">       
-     <a href="" class="link1">HOME</a>
-     <a href="" class="link2">ABOUT US</a>
-     <a href="" class="link3">INVESTMENT-SERVICES</a>
-     <a href="" class="link4">CONTACT US</a>
-     </nav>
-   </div>
-   <div style="background-color:burlywood; padding-top:5px;">
+    <div>
+      <nav class="head-nav">
+        <a href="" class="link1" onmouseover="handlelink(this)">HOME</a>
+        <a href="" class="link2" >ABOUT US</a>
+        <a href="" class="link3" onmouseover="handlelink2(this)">INVESTMENT-SERVICES</a>
+        <a href="" class="link4">CONTACT US</a>
+        <input type="search" onmouseover="handlesearch(this)" style="border-radius:7px;
+         background-color:blue;height:25px; width:180px;">
+      </nav>
+    </div>
+    <div style="background-color: burlywood; padding-top: 5px;" >
       <center>
-      <h3 class="heading-content1">About Us;</h3>
-    <img src="/precondo-ca-QHDFm084RNk-unsplash.jpg" class="img-1st">
-    <h3 style="color:blue; font-family: Georgia, 'Times New Roman', Times, serif;
-     font-weight:10px; text-size-adjust:10px;">
-    <b>AMIGOLD</b> Investment is an exclusive firm recognized all across the globe 
-    <br>providing long-lasting and existing real-estate services.
-    <br>A goal-driven real-estate firm helping individuals,organizations and the society at large
-    <br>to secure a better future for them in the real-estate investment field.</h3>
-    <button style="height:50px; width: 130px; background-color:brown;
-     color:aqua; font-family: Georgia, 'Times New Roman', Times, serif;
-     font-size:20px; border-radius:5px; ">View More</button>
-    </center>
-   </div>
-   <div>
-      <center>
-    <h3 class="heading-content2"onmouseover="handleclickcontent('this')">Invesment-Services;</h3>
-      <div>
-       <img src="/alexander-mils-lCPhGxs7pww-unsplash.jpg" class="image2">
-       <b style="color:blue; font-family: Georgia, 'Times New Roman', Times, serif; ">CASH VALUE</b>
-       <img src="/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" class="image3">
-       <b style="color:blue; font-family: Georgia, 'Times New Roman', Times, serif;">CASH HOUSING</b>
-       <img src="/anne-nygard-OtqaCE_SEMI-unsplash.jpg" class="image4">
-       <b style="color:blue; font-family: Georgia, 'Times New Roman', Times, serif;">CASH GROWTH</b>
-      </div>
+        <h3 class="heading-content1">About Us;</h3>
+        <img src="/precondo-ca-QHDFm084RNk-unsplash.jpg" class="img-1st" />
+        <h3
+          style="
+            color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 10px;
+            text-size-adjust: 10px;
+          "
+        >
+          <b>AMIGOLD</b> Investment is an exclusive firm recognized all across
+          the globe <br />providing long-lasting and existing real-estate
+          services. <br />A goal-driven real-estate firm helping
+          individuals,organizations and the society at large <br />to secure a
+          better future for them in the real-estate investment field.
+        </h3>
+        <button style="height: 50px;
+         width: 130px; background-color: brown;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: 20px;
+          border-radius: 5px;">
+          <a href="" style="color:aqua; text-decoration: none;">
+            view more
+          </a>
+        </button>
       </center>
-   </div>
-   <center>
-      <div class="text-img">
-         <h3 style="color:blue; font-family: Georgia, 'Times New Roman', Times, serif; padding-top:20px;"><b>CASH VALUE;</b></h3>
-         <h2 style="color:blue; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;">Helping you as an investor to get more cash value deals,<br>that brings in returns to meet expenses.</h2>
-         <h3 style="color:blue; font-family: Georgia, 'Times New Roman', Times, serif;"><b>CASH HOUSING;</b></h3>
-         <h2 style="color:blue; font-family: Georgia, 'Times New Roman', Times, serif; font-size:20px;">Giving you a reliable safeguard term to help you house your cash,
-         <br>so it doesn't get exposed to drainers or hackers.</h2>
-         <h3 style="color:blue; font-family: Georgia, 'Times New Roman', Times, serif;"><b>CASH GROWTH;</b></h3>
-         <h2 style="color:blue; font-family: Georgia, 'Times New Roman', Times, serif; padding-bottom:20px; font-size: 20px;">Your money will always grow per-basics selected,<br>either weekly,monthly or yearly depending on your choice.</h2>
-         </div>
-   </center>
-   <div>
+    </div>
+    <div>
       <center>
-      <h3 style="color:blue; font-family: Georgia, 'Times New Roman', Times, serif; 
-      text-decoration: underline;">Amigold Plans;</h3>
-      <table>
-      <tr>
-         <th>Real-estate services</th>
-         <th>Capital</th>
-         <th>Interest</th>
-      </tr>
-      <tr>
-        <td>Villa</td>
-        <td>500k upward</td>
-        <td>5%</td>
-      </tr>
-     </table>
-     <div><button style="height:30px; width: 130px; background-color:brown;
-      color:aqua; font-family: Georgia, 'Times New Roman', Times, serif;
-      font-size:15px; border-radius:5px;">Pay Now!</button></div>
-     <br><br>
-     <div>
-     <table>
-      <tr>
-         <th>Real-estate services</th>
-         <th>Capital</th>
-         <th>Interest</th>
-      </tr>
-      <tr>
-        <td>Bedroom apartment</td>
-        <td>1M-3M</td>
-        <td>5%</td>
-      </tr>
-     </table> <button style="height:30px; width: 130px; background-color: brown;
-     color:aqua; font-family: Georgia, 'Times New Roman', Times, serif;
-     font-size:15px; border-radius:5px;">Pay Now!</button>
-     </div>
-     <br><br>
-     <div>
-     <table>
-      <tr>
-         <th>Real-estate services</th>
-         <th>Capital</th>
-         <th>Interest</th>
-      </tr>
-      <tr>
-        <td>Rentals</td>
-        <td>5M-8M</td>
-        <td>7%</td>
-      </tr>
-     </table> <button style="height:30px; width: 130px; background-color: brown;
-     color:aqua; font-family: Georgia, 'Times New Roman', Times, serif;
-     font-size:15px; border-radius:5px;">Pay Now!</button>
-     </div>
-     <br><br>
-     <div>
-     <table>
-      <tr>
-         <th>Real-estate services</th>
-         <th>Capital</th>
-         <th>Interest</th>
-      </tr>
-      <tr>
-        <td>Industrial sites</td>
-        <td>10M-20M</td>
-        <td>10%</td>
-      </tr>
-     </table> <button style="height:30px; width: 130px; background-color:brown;
-     color:aqua; font-family: Georgia, 'Times New Roman', Times, serif;
-     font-size:15px; border-radius:5px;">Pay Now!</button>
-     </div>
-     <br><br>
-     <div>
-     <table>
-      <tr>
-         <th>Real-estate services</th>
-         <th>Capital</th>
-         <th>Interest</th>
-      </tr>
-      <tr>
-        <td>Under construction</td>
-        <td>15M upward</td>
-        <td>15%</td>
-      </tr>
-     </table> <button style="height:30px; width: 130px; background-color:brown;
-     color:aqua; font-family: Georgia, 'Times New Roman', Times, serif;
-     font-size:15px; border-radius:5px;">Pay Now!</button>
-     </div>
+        <h3 class="heading-content2">Invesment-Services;</h3>
+        <div>
+          <img src="/alexander-mils-lCPhGxs7pww-unsplash.jpg" class="image2" />
+          <b
+            style="
+              color: blue;
+              font-family: Georgia, 'Times New Roman', Times, serif;
+            "
+            >CASH VALUE</b
+          >
+          <img src="/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg" class="image3" />
+          <b
+            style="
+              color: blue;
+              font-family: Georgia, 'Times New Roman', Times, serif;
+            "
+            >CASH HOUSING</b
+          >
+          <img src="/anne-nygard-OtqaCE_SEMI-unsplash.jpg" class="image4" />
+          <b
+            style="
+              color: blue;
+              font-family: Georgia, 'Times New Roman', Times, serif;
+            "
+            >CASH GROWTH</b
+          >
+        </div>
       </center>
-   </div>
-   <div style="background-color: burlywood;">
+    </div>
     <center>
-      <h3 style="color:blue; font-family: Georgia, 'Times New Roman', Times, serif; 
-      text-decoration: underline; padding-top:5px;">Contact Us;</h3>
-      <p style="font-family:Georgia, 'Times New Roman', Times, serif;
-      color: blue; font-size:20px;">Phone;<a href>+234(0)90-999-499-30</a></p>
-      <p style="font-family:Georgia, 'Times New Roman', Times, serif; 
-      color: blue; font-size:20px;">E-mail;<a href="">amigoldreal-estate@hotmail.com</a></p>
-    <img src="/maxim-hopman-fiXLQXAhCfk-unsplash.jpg" style="height:30px; width:30px;">
-    <img src="/austin-distel-EMPZ7yRZoGw-unsplash.jpg" style="height:30px; width:30px;">
-    <img src="/manasvita-s-9q5vptiE2TY-unsplash.jpg" style="height:30px; width:30px;" >
+      <div class="text-img">
+        <h3
+          style="
+            color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-top: 20px;
+          "
+          onmouseover="mouseover(this)"
+        >
+          <b>CASH VALUE;</b>
+        </h3>
+        <h2
+          style="
+            color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+          "
+        >
+          Helping you as an investor to get more cash value deals,<br />that
+          brings in returns to meet expenses.
+        </h2>
+        <h3
+          style="
+            color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+          "
+          onmouseover="mouseover2(this)"
+        >
+          <b>CASH HOUSING;</b>
+        </h3>
+        <h2
+          style="
+            color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+          "
+        >
+          Giving you a reliable safeguard term to help you house your cash,
+          <br />so it doesn't get exposed to drainers or hackers.
+        </h2>
+        <h3
+          style="
+            color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+          "
+          onmouseover="mouseover3(this)"
+        >
+          <b>CASH GROWTH;</b>
+        </h3>
+        <h2
+          style="
+            color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-bottom: 20px;
+            font-size: 20px;
+          "
+        >
+          Your money will always grow per-basics selected,<br />either
+          weekly,monthly or yearly depending on your choice.
+        </h2>
+      </div>
     </center>
-   </div>
-</body>
-<script src="/project3.js"></script>
+    <div>
+      <center>
+        <h3
+          style="
+            color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-decoration: underline;
+          "
+        >
+          Amigold Plans;
+        </h3>
+        <table>
+          <tr>
+            <th>Real-estate services</th>
+            <th>Capital</th>
+            <th>Interest</th>
+          </tr>
+          <tr>
+            <td>Villa</td>
+            <td>500k upward</td>
+            <td>5%</td>
+          </tr>
+        </table>
+        <div>
+          <button style="background-color: brown; height: 30px;
+          width: 130px; border-radius:5px;">
+            <a href="http://127.0.0.1:5555/projectform.html"
+            style="
+              color:aqua;
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              font-size: 15px;
+              border-radius: 5px;
+              text-decoration: none;
+              
+            "
+            >
+            Pay Now!
+        </a>
+          </button>
+         
+        </div>
+        <br /><br />
+        <div>
+          <table>
+            <tr>
+              <th>Real-estate services</th>
+              <th>Capital</th>
+              <th>Interest</th>
+            </tr>
+            <tr>
+              <td>Bedroom apartment</td>
+              <td>1M-3M</td>
+              <td>5%</td>
+            </tr>
+          </table>
+          <button style="background-color: brown; height: 30px;
+          width: 130px; border-radius:5px;">
+            <a href="http://127.0.0.1:5555/projectform.html"
+            style="
+              color:aqua;
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              font-size: 15px;
+              border-radius: 5px;
+              text-decoration: none;
+              
+            "
+            >
+            Pay Now!
+        </a>
+          </button>
+        </div>
+        <br /><br />
+        <div>
+          <table>
+            <tr>
+              <th>Real-estate services</th>
+              <th>Capital</th>
+              <th>Interest</th>
+            </tr>
+            <tr>
+              <td>Rentals</td>
+              <td>5M-8M</td>
+              <td>7%</td>
+            </tr>
+          </table>
+          <button style="background-color: brown; height: 30px;
+          width: 130px; border-radius:5px;">
+            <a href="http://127.0.0.1:5555/projectform.html"
+            style="
+              color:aqua;
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              font-size: 15px;
+              border-radius: 5px;
+              text-decoration: none;
+              
+            "
+            >
+            Pay Now!
+        </a>
+          </button>
+        </div>
+        <br /><br />
+        <div>
+          <table>
+            <tr>
+              <th>Real-estate services</th>
+              <th>Capital</th>
+              <th>Interest</th>
+            </tr>
+            <tr>
+              <td>Industrial sites</td>
+              <td>10M-20M</td>
+              <td>10%</td>
+            </tr>
+          </table>
+          <button style="background-color: brown; height: 30px;
+          width: 130px; border-radius:5px;">
+            <a href="http://127.0.0.1:5555/projectform.html"
+            style="
+              color:aqua;
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              font-size: 15px;
+              border-radius: 5px;
+              text-decoration: none;
+              
+            "
+            >
+            Pay Now!
+        </a>
+          </button>
+        </div>
+        <br /><br />
+        <div>
+          <table>
+            <tr>
+              <th>Real-estate services</th>
+              <th>Capital</th>
+              <th>Interest</th>
+            </tr>
+            <tr>
+              <td>Under construction</td>
+              <td>15M upward</td>
+              <td>15%</td>
+            </tr>
+          </table>
+          <button style="background-color: brown; height: 30px;
+          width: 130px; border-radius:5px;">
+            <a href="http://127.0.0.1:5555/projectform.html"
+            style="
+              color:aqua;
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              font-size: 15px;
+              border-radius: 5px;
+              text-decoration: none;
+              
+            "
+            >
+            Pay Now!
+        </a>
+          </button>
+        </div>
+      </center>
+    </div>
+    <center>
+      <div>
+        <h4 style="color: blue; font-family: Georgia, 'Times New Roman', Times, serif;">
+           WE LOVE TO HEAR FROM YOU</h4>
+      <form>
+          <input type="text" class="input_opinion"><br><br>
+          <button class="button_opinion" onclick="handlesubmit(this)">Your Opinion</button>
+      </form>
+    </div>
+    </center>
+      <div style="background-color: burlywood">
+      <center>
+        <h3
+          style="
+            color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-decoration: underline;
+            padding-top: 5px;
+          "
+        >
+          Contact Us;
+        </h3>
+        <p
+          style="
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: blue;
+            font-size: 20px;
+          "
+        >
+          Phone;<a href>+234(0)90-999-499-30</a>
+        </p>
+        <p
+          style="
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: blue;
+            font-size: 20px;
+          "
+        >
+          E-mail;<a href="">amigoldreal-estate@hotmail.com</a>
+        </p>
+        <img
+          src="/maxim-hopman-fiXLQXAhCfk-unsplash.jpg"
+          style="height: 30px; width: 30px"
+        />
+        <img
+          src="/austin-distel-EMPZ7yRZoGw-unsplash.jpg"
+          style="height: 30px; width: 30px"
+        />
+        <img
+          src="/manasvita-s-9q5vptiE2TY-unsplash.jpg"
+          style="height: 30px; width: 30px"
+        />
+      </center>
+    </div>
+  </body>
+  <script src="/project3.js"></script>
 </html>
